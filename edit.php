@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = mysqli_query($con, $sql);
 
     if ($result) {
-        header('Location: student.php');
+        header('Location: index.php');
         exit;
     } else {
         echo "Something went wrong: " . mysqli_error($con);
