@@ -6,7 +6,7 @@
         $age=$_REQUEST['age'];
         $gender=$_REQUEST['gender'];
         $phone=$_REQUEST['phone'];
-        $query="INSERT INTO STUDENT(NAME,EMAIL,AGE,GENDER,PHONE) VALUES('$name','$email','$age','$gender','$phone')";
+        $query="INSERT INTO student(NAME,EMAIL,AGE,GENDER,PHONE) VALUES('$name','$email','$age','$gender','$phone')";
         $sql=mysqli_query($con,$query);
         if(mysqli_affected_rows($con)>0){
             echo "Student Inserted";
@@ -44,7 +44,7 @@
         <th>Action</th>
     </tr>
 <?php
-    $mysql=mysqli_query($con,"SELECT * FROM STUDENT");
+    $mysql=mysqli_query($con,"SELECT * FROM student");
     while($data=mysqli_fetch_assoc($mysql)){
 ?>
     <tr>
