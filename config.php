@@ -28,5 +28,4 @@ if (!mysqli_real_connect(
     die("Database connection failed: " . mysqli_connect_error());
 }
 
-echo "Database connected successfully!";
 ?>
