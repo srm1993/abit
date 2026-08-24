@@ -56,7 +56,7 @@
         <td><?php echo $data['phone']; ?></td>
         <td>
             <a href="delete.php?id=<?php echo $data['id']; ?>">Delete</a>
-            <a href="edit.php?id=–<?php echo $data['id']; ?>">Edit</a>
+            <a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a>
         </td>
     </tr>
 <?php } ?>
